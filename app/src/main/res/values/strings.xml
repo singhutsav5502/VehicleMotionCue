@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vehicle Motion Cues</string>
+    <string name="intro">Animated dots at the edges of the screen move with the car\'s acceleration, braking and turns. Matching what your eyes see to what your body feels can reduce motion sickness when reading or watching in a moving vehicle.</string>
+
+    <string name="show_cues">Show vehicle motion cues</string>
+    <string name="status_on">On, showing over all apps</string>
+    <string name="status_off">Off</string>
+
+    <string name="permission_title">Allow display over other apps</string>
+    <string name="permission_body">Motion cues are drawn on top of whatever app you\'re using. Android needs your permission for that.</string>
+    <string name="grant_permission">Open settings</string>
+    <string name="overlay_permission_hint">Turn on \"Allow display over other apps\" for Vehicle Motion Cues, then come back.</string>
+    <string name="start_failed">Couldn\'t start motion cues. Open the app and try again.</string>
+
+    <string name="style_label">Dot style</string>
+    <string name="style_regular">Regular</string>
+    <string name="style_dynamic">Dynamic</string>
+    <string name="style_help">Regular dots are always visible. Dynamic dots fade in only while the vehicle is speeding up, slowing down or turning.</string>
+
+    <string name="size_label">Dot size</string>
+    <string name="size_small">Small</string>
+    <string name="size_medium">Medium</string>
+    <string name="size_large">Large</string>
+
+    <string name="intensity_label">Movement intensity</string>
+    <string name="tile_hint">Tip: add the \"Motion cues\" tile to Quick Settings to turn this on with one tap when you get in the car.</string>
+
+    <string name="tile_label">Motion cues</string>
+    <string name="tile_on">On</string>
+    <string name="tile_off">Off</string>
+
+    <string name="notification_channel">Motion cues running</string>
+    <string name="notification_title">Vehicle motion cues on</string>
+    <string name="notification_text">Dots move with the vehicle to ease motion sickness</string>
+    <string name="turn_off">Turn off</string>
+</resources>
