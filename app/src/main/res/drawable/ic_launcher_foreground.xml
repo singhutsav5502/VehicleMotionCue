@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- progress ring -->
+    <path android:strokeColor="#2A332D" android:strokeWidth="6" android:fillColor="#00000000"
+        android:pathData="M54,32 A22,22 0 1,1 53.99,32" />
+    <path android:strokeColor="#7CE0A3" android:strokeWidth="6" android:strokeLineCap="round" android:fillColor="#00000000"
+        android:pathData="M54,32 A22,22 0 1,1 32,54" />
+    <!-- downward tick -->
+    <path android:strokeColor="#7CE0A3" android:strokeWidth="5" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000"
+        android:pathData="M45,48 L54,60 L63,48" />
+</vector>

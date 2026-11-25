@@ -1,0 +1,25 @@
+name: Build APK
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    # Ubuntu 24.04 images ship the Android SDK preinstalled (ANDROID_HOME).
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: gradle/actions/setup-gradle@v5
+      - name: Build release APK (debug-signed, sideloadable)
+        run: chmod +x gradlew && ./gradlew :app:assembleRelease --stacktrace
+      - uses: actions/upload-artifact@v5
+        with:
+          name: cutlog-apk
+          path: app/build/outputs/apk/release/*.apk
+          if-no-files-found: error
